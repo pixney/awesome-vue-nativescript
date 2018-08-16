@@ -5,25 +5,34 @@
 ## Quick Start
 [Quick Start](https://nativescript-vue.org/en/docs/getting-started/quick-start/)
 
+## Usage
+
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli/tree/master).
+
+``` bash
 # Scaffold project
 npm install -g vue-cli
-vue init nativescript-vue/vue-cli-template#next <project-name>
+vue init nativescript-vue/vue-cli-template <project-name>
 cd <project-name>
 
 # Install dependencies
 npm install
 
 # Build for production
-tns build <platform> --bundle
+npm run build
+npm run build:<platform>
 
 # Build, watch for changes and debug the application
-tns debug <platform> --bundle
+npm run debug
+npm run debug:<platform>
 
 # Build, watch for changes and run the application
-tns run <platform> --bundle
+npm run watch
+npm run watch:<platform>
 
-# Clean the NativeScript application instance
-tns platform remove <platform>
+# Clean the NativeScript application instance (i.e. rm -rf dist)
+npm run clean
+```
 
 `npm install -g @vue/cli`  
 
