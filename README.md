@@ -5,19 +5,25 @@
 ## Quick Start
 [Quick Start](https://nativescript-vue.org/en/docs/getting-started/quick-start/)
 
-```
-npm install -g @vue/cli @vue/cli-init
-vue init nativescript-vue/vue-cli-template <project-name>
+# Scaffold project
+npm install -g vue-cli
+vue init nativescript-vue/vue-cli-template#next <project-name>
 cd <project-name>
+
+# Install dependencies
 npm install
 
-```
+# Build for production
+tns build <platform> --bundle
 
-* `npm run watch:<platform>`
-* `npm run watch:ios` 
-* `npm run watch:android`
-* `npm run clean`
+# Build, watch for changes and debug the application
+tns debug <platform> --bundle
 
+# Build, watch for changes and run the application
+tns run <platform> --bundle
+
+# Clean the NativeScript application instance
+tns platform remove <platform>
 
 `npm install -g @vue/cli`  
 
