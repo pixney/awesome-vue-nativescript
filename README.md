@@ -39,3 +39,6 @@ npm run clean
 Also `unsetopt nomatch` in `~/.zshrc` to disable it
 
 https://github.com/nativescript-vue/vue-cli-template/tree/next
+
+Some comments regarding the lifecycle.  
+https://github.com/nativescript-vue/nativescript-vue.org/issues/177
