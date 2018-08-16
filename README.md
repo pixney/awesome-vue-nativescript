@@ -11,28 +11,36 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli/tree/m
 
 ``` bash
 # Scaffold project
-npm install -g vue-cli
-vue init nativescript-vue/vue-cli-template <project-name>
+npm install -g @vue/cli @vue/cli-init
+vue init nativescript-vue/vue-cli-template#next <project-name>
 cd <project-name>
 
 # Install dependencies
 npm install
 
 # Build for production
-npm run build
-npm run build:<platform>
+tns build <platform> --bundle
 
 # Build, watch for changes and debug the application
-npm run debug
-npm run debug:<platform>
+tns debug <platform> --bundle
 
 # Build, watch for changes and run the application
-npm run watch
-npm run watch:<platform>
+tns run <platform> --bundle
 
-# Clean the NativeScript application instance (i.e. rm -rf dist)
-npm run clean
+# Clean the NativeScript application instance
+tns platform remove <platform>
 ```
+
+## Using NativeScript plugins
+
+Installing plugins is the same as official NativeScript [documentation](https://docs.nativescript.org/plugins/plugins#installing-plugins).
+
+Use `tns plugin add` from the root of the project directory.
+
+```shell
+tns plugin add <plugin-name>
+```
+
 
 `npm install -g @vue/cli`  
 
