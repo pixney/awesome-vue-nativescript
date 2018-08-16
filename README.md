@@ -17,3 +17,9 @@ npm install
 * `npm run watch:ios` 
 * `npm run watch:android`
 * `npm run clean`
+
+
+`npm install -g @vue/cli`  
+
+Also `unsetopt nomatch` in `~/.zshrc` to disable it
+
