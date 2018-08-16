@@ -23,3 +23,4 @@ npm install
 
 Also `unsetopt nomatch` in `~/.zshrc` to disable it
 
+https://github.com/nativescript-vue/vue-cli-template/tree/next
